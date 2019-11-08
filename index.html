@@ -172,9 +172,10 @@ function render(images) {
   gl.activeTexture(gl.TEXTURE0);
   gl.bindTexture(gl.TEXTURE_2D, textures[0]);
   gl.activeTexture(gl.TEXTURE1);
+  gl.drawArrays(gl.TRIANGLES, 0, 3);
   gl.bindTexture(gl.TEXTURE_2D, textures[1]);
   // Draw the rectangle.
-  gl.drawArrays(gl.TRIANGLES, 0, 6);
+  gl.drawArrays(gl.TRIANGLES, 3, 6);
 }
 function randomInt(range) {
   return Math.floor(Math.random() * range);
