@@ -14,7 +14,7 @@ html {
   }
   
   canvas {
-    background-color: #fff;
+    background-color: black;
     border: 1px solid black;
     /* NOTE: This size is changed if in iframe - see below '.iframe canvas' */
     width: 400px;
